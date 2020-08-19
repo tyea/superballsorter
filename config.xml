@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget id="com.tomyeadon.superballsorter" version="1.0.0">
+	<name>Super Ball Sorter</name>
+	<author href="http://www.tomyeadon.com" email="tg@tomyeadon.com">Tom Yeadon</author>
+	<description></description>
+	<platform name="android">
+		<preference name="orientation" value="landscape"></preference>
+		<preference name="fullscreen" value="true"></preference>
+		<icon src="images/ldpi.png" density="ldpi"></icon>
+		<icon src="images/mdpi.png" density="mdpi"></icon>
+		<icon src="images/hdpi.png" density="hdpi"></icon>
+		<icon src="images/xhdpi.png" density="xhdpi"></icon>
+		<icon src="images/xxhdpi.png" density="xxhdpi"></icon>
+		<icon src="images/xxxhdpi.png" density="xxxhdpi"></icon>
+	</platform>
+</widget>
