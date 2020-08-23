@@ -128,12 +128,12 @@ var renderModal = function () {
 };
 
 var animateModal = function () {
-	if (modal.classList.contains("fg11")) {
-		modal.classList.remove("fg11");
-		modal.classList.add("fg6");
-	} else {
+	if (modal.classList.contains("fg6")) {
 		modal.classList.remove("fg6");
-		modal.classList.add("fg11");
+		modal.classList.add("fg7");
+	} else {
+		modal.classList.remove("fg7");
+		modal.classList.add("fg6");
 	}
 };
 

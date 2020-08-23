@@ -1881,9 +1881,8 @@ a {
 .modal {
 	position: absolute;
 	top: 4.5rem;
-	left: 0;
-	width: 15.5rem;
+	left: 1rem;
+	width: 14rem;
 	height: 1rem;
-	margin: 0 0.25rem 0 0.25rem;
 	padding: 0.25rem 0 0.25rem 0;
 }

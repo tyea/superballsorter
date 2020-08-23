@@ -48,12 +48,12 @@ var load = function () {
 
 addEventListener("load", load);
 
-var totalPages = 20;
+var totalPages = 8;
 var levelsPerPage = 48;
 var totalLevels = totalPages * levelsPerPage;
 
 var reset = function () {
-	for (var i = 1; i <= 1400; i += 1) {
+	for (var i = 1; i <= totalLevels; i += 1) {
 		localStorage.removeItem("level_" + i + "_complete");
 		localStorage.removeItem("level_" + i + "_unlocked");
 	}
@@ -62,13 +62,13 @@ var reset = function () {
 
 var getBackground = function (integer) {
 	var colours = [
-		"bg8",	
-		"bg9",
+		"bg8",
 		"bg10",
 		"bg11",
 		"bg12",
 		"bg1",
-		"bg2"
+		"bg2",	
+		"bg4"
 	];
 	return colours[integer];
 };
