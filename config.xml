@@ -2,10 +2,14 @@
 <widget id="com.tomyeadon.superballsorter" version="1.0.0">
 	<name>Super Ball Sorter</name>
 	<author href="http://www.tomyeadon.com" email="tg@tomyeadon.com">Tom Yeadon</author>
-	<description></description>
+	<description>Super Ball Sorter is a free puzzle game</description>
+	<preference name="phonegap-version" value="cli-8.0.0"></preference>
+	<preference name="orientation" value="landscape"></preference>
+	<preference name="fullscreen" value="true"></preference>
+	<allow-intent href="http://*/*"></allow-intent>
+	<allow-intent href="https://*/*"></allow-intent>
+	<plugin name="cordova-plugin-whitelist"></plugin>
 	<platform name="android">
-		<preference name="orientation" value="landscape"></preference>
-		<preference name="fullscreen" value="true"></preference>
 		<icon src="images/ldpi.png" density="ldpi"></icon>
 		<icon src="images/mdpi.png" density="mdpi"></icon>
 		<icon src="images/hdpi.png" density="hdpi"></icon>

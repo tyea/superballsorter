@@ -91,9 +91,13 @@ var setDimensions = function () {
 	localStorage.setItem("rem", rem);
 };
 
-var load = function () {
+var measureAndRedirect = function () {
 	setDimensions();
 	location = "menu.html";
+};
+
+var load = function () {
+	setTimeout(measureAndRedirect, 1500);
 };
 
 addEventListener("load", load);

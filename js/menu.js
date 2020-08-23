@@ -1,10 +1,11 @@
 var rack = null;
 var currentTube = 0;
 var direction = "RIGHT";
+var totalTubes = 7;
 
 var render = function () {
 	var html = "";
-	for (var tube = 0; tube < 9; tube += 1) {
+	for (var tube = 0; tube < totalTubes; tube += 1) {
 		html += "<div class=\"tube\">";
 		if (tube == currentTube) {
 			var ball = "<div class=\"ball " + getBackground(tube) + "\"></div>";
@@ -15,8 +16,11 @@ var render = function () {
 		html += "</div>";
 	}
 	rack.innerHTML = html;
+};
+
+var move = function () {
 	if (direction == "RIGHT") {
-		if (currentTube == 8) {
+		if (currentTube == (totalTubes - 1)) {
 			currentTube -= 1;
 			direction = "LEFT";
 		} else {
@@ -32,10 +36,14 @@ var render = function () {
 	}
 };
 
+var animate = function () {
+	render();
+	move();
+};
 var load = function () {
 	rack = document.querySelector("#rack");
-	render();
-	setInterval(render, 250);
+	animate();
+	setInterval(animate, 250);
 };
 
-window.addEventListener("load", load);
+addEventListener("load", load);

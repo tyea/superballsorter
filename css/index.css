@@ -1,0 +1,10 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url("../images/loading.gif");
+	background-size: 64px 64px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}

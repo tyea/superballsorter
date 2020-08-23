@@ -1,7 +1,4 @@
 var currentPage = 0;
-var totalPages = 20;
-var levelsPerPage = 48;
-var totalLevels = totalPages * levelsPerPage;
 
 var previousLink = null;
 var nextLink = null;
@@ -95,4 +92,4 @@ var load = function () {
 	nextLink.addEventListener("click", nextPage);
 };
 
-window.addEventListener("load", load);
+addEventListener("load", load);
